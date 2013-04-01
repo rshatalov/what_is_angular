@@ -16,7 +16,8 @@ AngularJC is a framework based on MVC pattern. This pattern consists of three pa
 
 The view is what the user sees. View in AngularJS is an HTML template with some declarations. You can declare in the template some data from the model in the  specific place or bind some HTML tag with the controller. Let's see example ("1. Hello World" in repository)):
 
-```<div ng-controller="HelloCtrl">
+```
+<div ng-controller="HelloCtrl">
 	Hello {{name}}!
 	<button ng-click="action()">
 		OK
@@ -32,7 +33,8 @@ In AngularJS templates you declare placeholders for data from your models and de
 
 Controller in AngularJS is a class. Controllers construct models and reacts to the actions when some event occurs. That's how you can implement HelloCtrl:
 
-```function HelloCtrl($scope) {
+```
+function HelloCtrl($scope) {
 	$scope.action = function() {
 		$scope.name = 'World';
 	}
@@ -50,7 +52,8 @@ In AngularJS you create Model data through $scope variable like we did: `$scope.
 
 And to show this data in the View you use curly braces in template: {{name}} - notice, you don't need to point $scope, but data which you present must be in scope of certain controller. Let's see example ("2. Scopes" in repository):
 
-```<div ng-controller="FirstCtrl">
+```
+<div ng-controller="FirstCtrl">
 	This is the scope of the {{name}}!
 </div>
 
@@ -61,7 +64,8 @@ And to show this data in the View you use curly braces in template: {{name}} - n
 
 And controllers:
 
-```function FirstCtrl($scope) {
+```
+function FirstCtrl($scope) {
   $scope.name = 'First Controller';
 }
 
@@ -72,7 +76,8 @@ function SecondCtrl($scope) {
 
 We just declared variables with the same name. When you run this page in your browser you'll see:
 
-```This is the scope of the First Controller!
+```
+This is the scope of the First Controller!
 This is the scope of the Second Controller!
 ```
 
@@ -82,7 +87,8 @@ Now as we learned basics of MVC design pattern in AngularJS, let's also learn ab
 
 To bootstrap AngularJS to your application you need to add AngularJS script. You can find it here: [http://angularjs.org](http://angularjs.org). Just put that script to your JS folder and make reference in your HTML page:
 
-```<head>
+```
+<head>
   <script src="scripts/angular.min.js"></script>
 </head>
 ```
@@ -109,7 +115,8 @@ Also you can place ng-app in html tag, so AngularJS will work in whole document:
 
 And for the end part let's examine one more example - "Data Biding" Which helps us see one very important feature of AngularJS. HTML code:
 
-```<div ng-controller="DataBindingCtrl">
+```
+<div ng-controller="DataBindingCtrl">
   Hello {{name}}!<br/>
   <input ng-model="name">
 </div>
