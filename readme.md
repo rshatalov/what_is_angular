@@ -139,5 +139,5 @@ When page is loaded variable name is an empty string. But when we type something
 So, that's all for today.
 
 You can find more info about AngularJS here:
-[Tutorial](http://docs.angularjs.org/tutorial/index)
+[Tutorial](http://docs.angularjs.org/tutorial/index),
 [Developer's guide](http://docs.angularjs.org/guide)
