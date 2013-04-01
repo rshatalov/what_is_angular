@@ -2,17 +2,17 @@ In this tutorial we'll learn what is AngularJS and it's main features.
 
 You can run all examples in repository without any prerequesitions. Just run appropriate .html file in your browser and it's source in your text editor. All example numerated for ease of use.
 
-What is AngularJS
+# What is AngularJS
 
 AngularJS is a JavaScript framework based on MVC design pattern. This framework was made for developing dynamic web-applications. AngularJS has some important differences from others JS frameworks: form validation, deep linking, data binding, no DOM manipulation in the controllers, declarative style. Before we look at these features more closely let's see basic usage of AngularJS first.
 
-AngularJS Components
+## AngularJS Components
 
 To understand what is AngularJS and how to work with it we'll examine it's components.
 
 AngularJC is a framework based on MVC pattern. This pattern consists of three parts: Model, View, Controller. Model is the representation of all data in the application, View is the way how data is presented to the user, and the third part - Controller establishes interaction between user (View) and data (Model). Now we can learn specifics of MVC design pattern in AngularJC.
 
-View
+### View
 
 The view is what the user sees. View in AngularJS is an HTML template with some declarations. You can declare in the template some data from the model in the  specific place or bind some HTML tag with the controller. Let's see example ("1. Hello World" in repository)):
 
@@ -27,7 +27,7 @@ In the attribute of div we declare that this div is binded to our controller Hel
 
 In AngularJS templates you declare placeholders for data from your models and declare what tags will be binded to specific events.
 
-Controller
+### Controller
 
 Controller in AngularJS is a class. Controllers construct models and reacts to the actions when some event occurs. That's how you can implement HelloCtrl:
 
@@ -42,7 +42,7 @@ When you create controller you must send argument $scope. $ sign is AngularJS pr
 
 So, when you load 'Hello World' example, AngularJS creates controller and initializes variable 'name' to empty string. When you click 'Hi' button, action function is called and 'name' property is changed to 'World'.
 
-Model
+### Model
 
 In AngularJS you create Model data through $scope variable like we did:
 
@@ -75,7 +75,7 @@ This is the scope of the Second Controller!
 
 Now as we learned basics of MVC design pattern in AngularJS, let's also learn about bootstrapping it to HTML page.
 
-Bootstrapping AngularJS
+### Bootstrapping AngularJS
 
 To bootstrap AngularJS to your application you need to add AngularJS script. You can find it here: http://angularjs.org. Just put that script to your JS folder and make reference in your HTML page:
 
@@ -100,7 +100,7 @@ Also you can place ng-app in html tag, so AngularJS will work in whole document:
 </html>
 
 
-Data binding
+## Data binding
 
 And for the end part let's examine one more example - "Data Biding" Which helps us see one very important feature of AngularJS. HTML code:
 
